@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: #6E6E6E;
+  height: 100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-name: loading;
+}
+
+@keyframes loading {
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+body{
+  background-color: #6E6E6E;
+}
+
+header img{
+  width:7vw;
+}
+
+header{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 3%;
+  position: sticky;
+}
