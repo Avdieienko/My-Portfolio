@@ -17,14 +17,15 @@ import javascript from "./images/javascript.png"
 import css from "./images/css.png"
 import cplus from "./images/c++.png"
 import java from "./images/java.png"
-import react from "./images/react.png"
+import react_png from "./images/react.png"
 import Python3 from "./images/Python3.webp"
+import gymnasium from "./images/gymnasium.webp"
+import uni_logo from "./images/uni_logo.webp"
 
 
 export const Main = () =>{
     return(
         <>
-            <body>
                 {/* ---------------------Desktop_footer----------------------- */}
                 <div className="desktop_footer">
                     <a href="https://www.instagram.com/avd.dima03/"><img alt="Github" src={github}/></a>
@@ -37,14 +38,18 @@ export const Main = () =>{
                 {/* ---------------------Header----------------------- */}
                 <header>
                     <div>
-                        <img class="logo" alt="logo" src={logo}></img>
-                        <img class="contact_me" alt="Contact me" src={contactMe}></img>
+                        <a href="/">
+                            <img class="logo" alt="logo" src={logo}></img>
+                        </a>
+                        <a href="mailto:avdieienko.d@gmail.com">
+                            <img class="contact_me" alt="Contact me" src={contactMe}></img>
+                        </a>
                     </div>
                 </header>
                 {/* ---------------------Main----------------------- */}
                 <main>
                     <section className="welcome_section">
-                        <div className="portrait_wraper">
+                        <div className="portrait_wrapper">
                             <img className="portrait" alt="Portrait" src={portrait_main}></img>
                             <img className="ball" alt="Ball" src={ball}></img>
                             <img className="car" alt="Car" src={f1_car}></img>
@@ -76,7 +81,7 @@ export const Main = () =>{
                             <img className="skill" alt="" src={java}/>
                             <img className="skill" alt="" src={python}/>
                             <img className="skill" alt="" src={javascript}/>
-                            <img className="skill" alt="" src={react}/>
+                            <img className="skill" alt="" src={react_png}/>
                             <img className="skill" alt="" src={html}/>
                             <img className="skill" alt="" src={css}/>
                             <img className="skill" alt="" src={git}/>
@@ -86,42 +91,84 @@ export const Main = () =>{
                         <h1>Certificates</h1>
                         <div className="certificates">
                             <div className="certificate">
-                                <img alt ="" className="certificate_image"src={Python3}/>
+                                <img alt ="" className="certificate_image" src={Python3}/>
                                 <h2 className="certificate_name">Certificate name</h2>
                                 <h3 className="certificate_uni">University</h3>
                             </div>
                             <div className="certificate">
-                                <img alt ="" className="certificate_image"src={Python3}/>
+                                <img alt ="" className="certificate_image" src={Python3}/>
                                 <h2 className="certificate_name">Certificate name</h2>
                                 <h3 className="certificate_uni">University</h3>
                             </div>
                             <div className="certificate">
-                                <img alt ="" className="certificate_image"src={Python3}/>
+                                <img alt ="" className="certificate_image" src={Python3}/>
                                 <h2 className="certificate_name">Certificate name</h2>
                                 <h3 className="certificate_uni">University</h3>
                             </div>
                             <div className="certificate">
-                                <img alt ="" className="certificate_image"src={Python3}/>
+                                <img alt ="" className="certificate_image" src={Python3}/>
                                 <h2 className="certificate_name">Certificate name</h2>
                                 <h3 className="certificate_uni">University</h3>
                             </div>
                             <div className="certificate">
-                                <img alt ="" className="certificate_image"src={Python3}/>
+                                <img alt ="" className="certificate_image" src={Python3}/>
                                 <h2 className="certificate_name">Certificate name</h2>
                                 <h3 className="certificate_uni">University</h3>
                             </div>
                             <div className="certificate">
-                                <img alt ="" className="certificate_image"src={Python3}/>
+                                <img alt ="" className="certificate_image" src={Python3}/>
                                 <h2 className="certificate_name">Certificate name</h2>
                                 <h3 className="certificate_uni">University</h3>
+                            </div>
+                        </div>
+                        <a href="https://google.com" className="certificates_button">See more</a>
+                    </section>
+                    <section className="timeline_section">
+                        <h1>Timeline</h1>
+                        <div className="timeline">
+                            <div className="time_data left">
+                                <div className="time_text">
+                                    <h2>Gymnasium A+</h2>
+                                    <h3>2022</h3>
+                                    <p>Graduated from High School at Gymnasium A+, a private school in Kyiv, Ukraine, near the top of my class.</p>
+                                </div>
+                                <div>
+                                    <img alt="" src={gymnasium} className="time_img"/>
+                                </div>
+                            </div>
+                            <div className="time_data right">
+                                <div className="time_text">
+                                    <h2>University of Southampton</h2>
+                                    <h3>2022-23</h3>
+                                    <p>Currently undergoing Undergraduate Foundation Programme at University of Southampton, top 10 UK University for Computer Science and Engineering</p>
+                                </div>
+                                <div>
+                                    <img alt="" src={uni_logo} className="time_img"/>
+                                </div>
+                            </div>
+                            <div className="time_data left">
+                                <div className="time_text">
+                                    <h2>University of Southampton</h2>
+                                    <h3>2023-26</h3>
+                                    <p>Will be doing Bsc Computer Science starting from 2023</p>
+                                </div>
+                                <div>
+                                    <img alt="" src={uni_logo} className="time_img"/>
+                                </div>
                             </div>
                         </div>
                     </section>
                 </main>
                 <footer>
-                    <h1>Footer</h1>
+                    <div className="socials">
+                        <img alt="Instagram" src={insta}/>
+                        <img alt="Facebook"src={facebook}/>
+                        <img alt="Twitter" src={twitter}/>
+                        <img alt="Linkedin" src={linkedin}/>
+                        <img alt="Github"src={github}/>
+                    </div>
+                    <h4 >Designed & Built by <a className="signature" href="/">Dmytro Avdieienko</a></h4>
                 </footer>
-            </body>
         </>
     )
 }

@@ -6,12 +6,21 @@
   height: 100vh;
   width:100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: "Open Sans", sans-serif;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-name: opaciter;
+}
+
+.App img{
+  width:10vh;
+  margin-bottom: 3%;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-name: loading;
-  font-weight: "Open Sans", sans-serif;
 }
 
 @keyframes loading {
@@ -24,7 +33,19 @@
     opacity: 1;
   }
   100%{
-    transform: translateY(-100%);
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+}
+
+@keyframes opaciter {
+  0%{
+    opacity: 1;
+  }
+  70%{
+    opacity:1;
+  }
+  100%{
     opacity: 0;
   }
 }
@@ -55,10 +76,19 @@ h3{
   color:#BAFF39
 }
 p{
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   color:white;
 }
 
+@media (orientation:portrait) {
+  h1{
+    font-size: 9vw;
+  }
+  p{
+    font-size: 4vw;
+    color:white;
+  }
+}
 /*----------------Desktop footer------------------*/
 
 .desktop_footer{
@@ -77,6 +107,12 @@ p{
 .desktop_footer hr{
   border-left: 1px solid #BAFF39;
   height: 20vw;
+}
+
+@media (orientation:portrait){
+  .desktop_footer{
+    display: none;
+  }
 }
 
 /*----------------Header------------------*/
@@ -104,11 +140,13 @@ header img{
   justify-content: space-around;
   margin-left: 3%;
   margin-right: 3%;
+  margin-top: 2%;
 }
 
 .portrait{
   width:45vw;
-  margin:auto;
+  position: relative;
+  top:0%;
 }
 .portrait_wrapper{
   align-items: center;
@@ -127,9 +165,10 @@ header img{
 .degree{
   color:white;
 }
+
 .ball, .car{
-  position: relative;
   width:4vw;
+  position: relative;
 }
 .ball{
   top:-75%;
@@ -138,6 +177,49 @@ header img{
 .car{
   top:-55%;
   left:82%;
+}
+
+@media (orientation:portrait) {
+  .welcome_section{
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90%;
+  }
+  .portrait_wrapper{
+    position: absolute;
+    top:13%
+  }
+  .portrait{
+    width: 80vw;
+    position: relative;
+    top:0%
+  }
+  .ball{
+    width:6vw;
+    position: absolute;
+    top:14%;
+    left:15%;
+  }
+  .car{
+    width:6vw;
+    position: absolute;
+    top:35%;
+    left:95%;
+  }
+  .greeting{
+    font-size:4vw;
+  }
+  .name{
+    font-size:12vw;
+    margin:0;
+  }
+  .degree{
+    font-size:4vw;
+    color:white;
+  }
+  header img{
+    width:13vw;
+  }
 }
 
 /*--------------------Scroll section----------------*/
@@ -159,6 +241,14 @@ header img{
   height:50vh;
   border-left: 1px solid #BAFF39;
 }
+@media (orientation:portrait) {
+  .scroll_wrapper{
+    margin-top: 8%;
+  }
+  .scroll_wrapper h3{
+    font-size: 3vw;
+  }
+}
 
 /*--------------------About me section----------------*/
 
@@ -179,10 +269,27 @@ header img{
 
 .greeting_portrait{
   position: absolute;
-  width:20vw;
-  top:44%;
-  left:79.8%;
+  width:22vw;
+  top:43.5%;
+  left:77.8%;
 }
+
+@media (orientation:portrait){
+  .about_me img{
+    width:5vw;
+  }
+  .about_me{
+    padding-right: 12%;
+  }
+  .greeting_portrait{
+    position: absolute;
+    width:40vw;
+    top:66.5%;
+    left:60%;
+  }
+}
+
+
 
 /*--------------------Skills section----------------*/
 
@@ -204,12 +311,27 @@ header img{
   width:7vw;
 }
 
+@media (orientation:portrait) {
+  .skills{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .skill{
+    width:15vw;
+    margin:auto
+  }
+  .skills_section{
+    padding-bottom: 27%;
+  }
+}
+
 /*--------------------Certificates section----------------*/
 
 
 .certificates_section{
   text-align: center;
   background-color: #383838;
+  padding-bottom: 4%;
 }
 .certificates_section h1{
   padding-top: 3%;
@@ -218,7 +340,7 @@ header img{
 .certificates{
   display: grid;
   grid-template-columns: auto auto auto ;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   row-gap: 10%;
   padding-top: 1%;
   padding-bottom: 10%;
@@ -251,10 +373,132 @@ header img{
   left:5%;
 }
 
+.certificates_button{
+  padding:1% 5% 1% 5%;
+  border-radius: 16px;
+  background-color: #BAFF39;
+  font-size: 1.3vw;
+  color:black;
+  font-weight: bold;
+}
+
 .certificate:hover .certificate_image{
   opacity: 1;
   border-color:#BAFF39;
+  scale: 1.1;
 }
 .certificate:hover .certificate_name,.certificate:hover .certificate_uni{
   opacity: 0;
+}
+
+
+/*----------------Timeline---------------------*/
+
+.timeline_section h1{
+  text-align: center;
+}
+.timeline_section h2{
+  font-size: 2.2vw;
+}
+.timeline_section h3{
+  font-size: 1.4vw;
+}
+
+
+.time_img{
+  width:10vw;
+  height: auto;
+  border-radius: 60%;
+  position: relative;
+  z-index: 2;
+}
+.timeline{
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+.timeline::after{
+  content: " ";
+  position: absolute;
+  width:.5vw;
+  background-color: white;
+  top:0;
+  bottom:0;
+  z-index: 0;
+}
+
+.time_data{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10%;
+}
+.left{
+  margin-left: 7.7%;
+}
+
+.right{
+  margin-right: 6.8%;
+  flex-direction: row-reverse;
+}
+
+.left .time_text{
+  text-align: end;
+  padding-right: 5%;
+}
+.right .time_text{
+  text-align: start;
+  padding-left: 5%;
+}
+.time_text{
+  width:35%;
+}
+.time_text p{
+  font-weight: bold;
+}
+
+/*--------------Footer----------------*/
+
+footer{
+  margin-top: 5%;
+  text-align: center;
+  color:#929495;
+  margin-bottom: 2%;
+}
+
+footer h4{
+  font-size: 1vw;
+  display: inline;
+
+}
+.signature{
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.signature:link{
+  color:inherit;
+}
+.signature:visited{
+  color:inherit;
+}
+
+.signature:hover{
+  color:#BAFF39;
+}
+
+.socials{
+  display: none;
+}
+.socials img{
+  width:2vw;
+}
+
+@media (max-width:700px) {
+  .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
 }

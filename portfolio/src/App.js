@@ -1,7 +1,8 @@
 import './App.css';
 import {Main} from "./Main"
 import {useState, useEffect } from "react"
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PropagateLoader  from "react-spinners/PropagateLoader";
+import logo from "./images/logo.svg"
 
 
 function App() {
@@ -19,10 +20,12 @@ useEffect(()=>{
     {
       loading ?
       <div className='App'>
-        <PacmanLoader
+        <img alt="logo" src={logo}></img>
+        <PropagateLoader
           color="#baff39"
           loading={loading}
-          size={100}
+          size={10}
+          speedMultiplier="1.5"
           aria-label="Loading Spinner"
         />
       </div>
