@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+::-moz-selection { /* Code for Firefox */
+    background: #BAFF39;
+  }
+  ::selection {
+    color:#6E6E6E;
+    background: #BAFF39;
+  }
 .App {
   text-align: center;
   background-color: #6E6E6E;
@@ -16,12 +23,13 @@
 }
 
 .App img{
-  width:10vh;
-  margin-bottom: 3%;
+  width:15vh;
+  margin-bottom: 4vh;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-name: loading;
 }
+
 
 @keyframes loading {
   0%{
@@ -75,6 +83,7 @@ h3{
   font-size: 1.5vw;
   color:#BAFF39
 }
+
 p{
   font-size: 1.5vw;
   color:white;
@@ -83,6 +92,12 @@ p{
 @media (orientation:portrait) {
   h1{
     font-size: 9vw;
+  }
+  h2{
+    font-size: 7vw;
+  }
+  h3{
+    font-size: 4vw;
   }
   p{
     font-size: 4vw;
@@ -103,10 +118,14 @@ p{
   width:2vw;
   margin-top:40%;
   margin-bottom:40%;
+  transition: 0.2s;
 }
 .desktop_footer hr{
   border-left: 1px solid #BAFF39;
   height: 20vw;
+}
+.desktop_footer img:hover{
+  transform:scale(1.3);
 }
 
 @media (orientation:portrait){
@@ -131,6 +150,10 @@ header div{
 }
 header img{
   width:6vw;
+  transition: 0.2s;
+}
+header img:hover{
+  transform: scale(1.2);
 }
 
 /*--------------------Welcome section----------------*/
@@ -246,7 +269,7 @@ header img{
     margin-top: 8%;
   }
   .scroll_wrapper h3{
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
@@ -262,6 +285,7 @@ header img{
 }
 .about_me{
   width:70%;
+  padding-left: 8%;
 }
 .about_me img{
   width:2vw;
@@ -271,7 +295,7 @@ header img{
   position: absolute;
   width:22vw;
   top:43.5%;
-  left:77.8%;
+  left:77.7%;
 }
 
 @media (orientation:portrait){
@@ -309,6 +333,11 @@ header img{
 }
 .skill{
   width:7vw;
+  transition: .2s;
+}
+
+.skill:hover{
+  transform: scale(1.3);
 }
 
 @media (orientation:portrait) {
@@ -321,7 +350,7 @@ header img{
     margin:auto
   }
   .skills_section{
-    padding-bottom: 27%;
+    padding-bottom: 30%;
   }
 }
 
@@ -334,7 +363,7 @@ header img{
   padding-bottom: 4%;
 }
 .certificates_section h1{
-  padding-top: 3%;
+  padding-top: 5%;
 }
 
 .certificates{
@@ -362,15 +391,14 @@ header img{
   position: absolute;
   margin:0;
   transition: 0.3s;
+  left:5%;
 }
 
 .certificate_name{
   top:50%;
-  left:5%;
 }
 .certificate_uni{
   top:70%;
-  left:5%;
 }
 
 .certificates_button{
@@ -380,6 +408,19 @@ header img{
   font-size: 1.3vw;
   color:black;
   font-weight: bold;
+  text-decoration: none;
+  transition: .2s;
+}
+.certificates_button:link{
+  color:black;
+}
+.certificates_button:visited{
+  color:black;
+}
+
+.certificates_button:hover{
+  background-color: white;
+  color:black;
 }
 
 .certificate:hover .certificate_image{
@@ -389,6 +430,35 @@ header img{
 }
 .certificate:hover .certificate_name,.certificate:hover .certificate_uni{
   opacity: 0;
+}
+
+@media (orientation:portrait){
+  .certificates{
+    grid-template-columns: auto;
+    gap:1%;
+    padding-bottom: 27%;
+    margin-bottom: 2%;
+  }
+  .certificate_image{
+    width:70vw;
+    opacity: 0.5;
+    transition: 0.3s;
+    border: transparent solid 4px;
+  }
+  .certificate_name, .certificate_uni{
+    left:14%;
+  }
+  .certificates_button{
+    padding:3% 8% 3% 8%;
+    border-radius: 16px;
+    background-color: #BAFF39;
+    font-size: 5vw;
+    color:black;
+    font-weight: bold;
+  }
+  .certificates_section{
+    padding-bottom: 10%;
+  }
 }
 
 
@@ -409,8 +479,10 @@ header img{
   width:10vw;
   height: auto;
   border-radius: 60%;
-  position: relative;
-  z-index: 2;
+  transition: .3s;
+}
+.time_img:hover{
+  transform: scale(1.3);
 }
 .timeline{
   position: relative;
@@ -424,7 +496,7 @@ header img{
   background-color: white;
   top:0;
   bottom:0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .time_data{
@@ -434,6 +506,7 @@ header img{
 }
 .left{
   margin-left: 7.7%;
+  text-align: end;
 }
 
 .right{
@@ -442,7 +515,6 @@ header img{
 }
 
 .left .time_text{
-  text-align: end;
   padding-right: 5%;
 }
 .right .time_text{
@@ -453,7 +525,43 @@ header img{
   width:35%;
 }
 .time_text p{
-  font-weight: bold;
+  font-weight: normal;
+}
+
+@media (orientation:portrait){
+  .timeline{
+    align-items: left;
+    text-align: left;
+  }
+  .timeline::after{
+    left:8%;
+    width:1vw;
+  }
+  .left, .right{
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin:0;
+    text-align: left;
+  }
+  .left .time_text{
+    padding-left: 5%;
+    padding-right: 0;
+  }
+  .timeline_section h2{
+    font-size: 6vw;
+  }
+  .timeline_section h3{
+    font-size: 3vw;
+  }
+  .time_text{
+    width:70%;
+  }
+  .time_img{
+    width:15vw;
+  }
+  .time_data{
+  padding-bottom: 20%;
+  }
 }
 
 /*--------------Footer----------------*/
@@ -493,12 +601,239 @@ footer h4{
   width:2vw;
 }
 
-@media (max-width:700px) {
+@media (orientation:portrait){
   .socials{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
+  .socials img{
+    width:6vw;
+  }
+  footer h4{
+    font-size: 2vw;
+  }
+}
+
+/*------Animations of loading------------*/
+
+@keyframes top-animation{
+  0%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0%)
+  }
+}
+
+.top_animation{
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-name: top-animation;
+}
+
+@keyframes top-animation-delay-1{
+  0%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  20%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0%)
+  }
+}
+@keyframes top-animation-delay-2{
+  0%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  30%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0%)
+  }
+}
+@keyframes top-animation-delay-3{
+  0%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  40%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0%)
+  }
+}
+@keyframes top-animation-delay-4{
+  0%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  60%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0%)
+  }
+}
+.delay-1{
+  animation-name: top-animation-delay-1;
+  animation-duration: 1s;
+}
+.delay-2{
+  animation-name: top-animation-delay-2;
+  animation-duration: 1.2s;
+}
+.delay-3{
+  animation-name: top-animation-delay-3;
+  animation-duration: 1.4s;
+}
+.delay-4{
+  animation-name: top-animation-delay-4;
+  animation-duration: 1.6s;
+}
+
+
+
+@keyframes bottom-animation {
+  0%{
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.bottom_animation{
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+.bottom_animation.visible{
+  transform: translateY(0%);
+  opacity: 1;
+  animation-duration: .7s;
+  animation-name: bottom-animation;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ball {
+  0%{
+    transform: translateY(-900%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+.ball{
+  animation-name: ball;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  transition: 5s;
+}
+.ball:hover{
+  transform: rotate(5turn);
+  transition: 5s;
+}
+
+@keyframes car {
+  0%{
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.car{
+  animation-name: car;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes left-animation {
+  0%{
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.left_animation{
+  transform: translateY(10%);
+  opacity: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.left_animation.visible{
+  transform: translateY(0%);
+  opacity: 1;
+  animation-duration: .7s;
+  animation-name: bottom-animation;
+  animation-timing-function: ease-in-out;
+}
+
+@media (orientation:portrait){
+  .left_animation{
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  .left_animation.visible{
+    transform: translateX(0%);
+    opacity: 1;
+    animation-duration: .7s;
+    animation-name: left-animation;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+
+@keyframes scroll_animation {
+  0%{
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.scroll_animation{
+  animation: scroll_animation 3s ease-in-out;
 }
