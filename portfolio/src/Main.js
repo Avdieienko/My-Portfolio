@@ -168,7 +168,9 @@ export const Main = () =>{
                         </FadeUp>
                     </section>
                     <section className="timeline_section">
-                        <h1>Timeline</h1>
+                        <FadeUp>
+                            <h1>Timeline</h1>
+                        </FadeUp>
                         <div className="timeline">
                             <FadeLeft>
                                 <div className="time_data left">
