@@ -1,28 +1,27 @@
-import React from "react";
 import logo from "./images/logo.svg";
 import contactMe from "./images/contact_me.svg";
 import portrait_main from "./images/portrait.svg";
-import insta from "./images/insta.png";
-import twitter from "./images/twitter.png";
-import facebook from "./images/facebook.png";
-import github from "./images/github.png";
-import linkedin from "./images/linkedin.png";
+import insta from "./images/insta.webp";
+import twitter from "./images/twitter.webp";
+import facebook from "./images/facebook.webp";
+import github from "./images/github.webp";
+import linkedin from "./images/linkedin.webp";
 import f1_car from "./images/f1_car.png";
 import ball from "./images/ball.png";
-import greeting_portrait from "./images/greeting_portrait.png";
+import greeting_portrait from "./images/greeting_portrait.webp";
 import flag from "./images/flag.png";
-import python from "./images/python.png";
-import html from "./images/html.png";
-import git from "./images/git.png";
-import javascript from "./images/javascript.png";
-import css from "./images/css.png";
-import cplus from "./images/c++.png";
-import java from "./images/java.png";
-import react_png from "./images/react.png";
+import python from "./images/python.webp";
+import html from "./images/html.webp";
+import git from "./images/git.webp";
+import javascript from "./images/javascript.webp";
+import css from "./images/css.webp";
+import cplus from "./images/c++.webp";
+import java from "./images/java.webp";
+import react_png from "./images/react.webp";
 import Python3 from "./images/Python3.webp";
 import gymnasium from "./images/gymnasium.webp";
 import uni_logo from "./images/uni_logo.webp";
-import {FadeUp, FadeLeft } from "./OnScreen";
+import {VisibilityDiv } from "./OnScreen";
 
 
 export const Main = () =>{
@@ -52,18 +51,18 @@ export const Main = () =>{
                 <main>
                     <section className="welcome_section">
                         <div className="portrait_wrapper">
-                            <FadeUp>
+                            <VisibilityDiv classname="bottom_animation">
                                 <img className="portrait" alt="Portrait" src={portrait_main}></img>
-                            </FadeUp>
+                            </VisibilityDiv>
                             <img className="ball" alt="Ball" src={ball}></img>
                             <img className="car" alt="Car" src={f1_car}></img>
                         </div>
                         <div className="greeting_wrapper">
-                        <FadeUp>
+                        <VisibilityDiv classname="bottom_animation">
                             <h1 className="greeting">Hi, my name is</h1>
                             <h1 className="name">Dmytro Avdieienko</h1>
                             <h3 className="degree">Bsc Computer Science, Soton '23</h3>
-                        </FadeUp>
+                        </VisibilityDiv>
                         </div>
                     </section>
                     <section className="scroll_wrapper">
@@ -71,109 +70,91 @@ export const Main = () =>{
                                 <hr className="scroll_animation"/>
                     </section>
                     <section className="aboutme_section">
-                        <FadeUp>
+                        <VisibilityDiv classname="bottom_animation">
                             <h1>About me</h1>
-                        </FadeUp>
-                        <FadeUp>
+                        </VisibilityDiv>
+                        <VisibilityDiv classname="bottom_animation">
                         <p className="about_me">
                             Born in Kyiv, Ukraine.<img alt="Ukrainian flag" src={flag}/> I am 17 years old and studying at the University of Southampton.<br/><br/>
                             My interests include software engineering, artificial intelligence, and machine learning.
                             Python developer, Software developer, Web developer Intern.<br/><br/>
                             Undergoing UFP at Soton with progression degree as Bsc Computer Science. Plans include Meng in Artificial Intelligence.🖥️
                         </p>
-                        </FadeUp>
+                        </VisibilityDiv>
                         <img alt="Greeting portrait"className="greeting_portrait" src={greeting_portrait}></img>
                     </section>
                     <section className="skills_section">
-                        <FadeUp>
+                        <VisibilityDiv classname="bottom_animation">
                         <h1>Skills</h1>
-                        </FadeUp>
+                        </VisibilityDiv>
                         <div className="skills">
-                            <FadeUp>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={cplus}/>
-                            </FadeUp>
-                            <FadeUp>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={java}/>
-                            </FadeUp>
-                            <FadeUp>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={python}/>
-                            </FadeUp>
-                            <FadeUp>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={javascript}/>
-                            </FadeUp>
-                            <FadeUp>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={react_png}/>
-                            </FadeUp>
-                            <FadeUp>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={html}/>
-                            </FadeUp>
-                            <FadeUp>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={css}/>
-                            </FadeUp>
-                            <FadeUp>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="bottom_animation">
                             <img className="skill" alt="" src={git}/>
-                            </FadeUp>
+                            </VisibilityDiv>
                         </div>
                     </section>
                     <section className="certificates_section">
-                        <FadeUp>
+                        <VisibilityDiv classname="bottom_animation">
                             <h1>Certificates</h1>
-                        </FadeUp>
+                        </VisibilityDiv>
                         <div className="certificates">
-                            <FadeUp>
-                                <div className="certificate">
+                            <VisibilityDiv classname="certificate primary bottom_animation">
                                     <img alt ="" className="certificate_image" src={Python3}/>
-                                    <h2 className="certificate_name">Certificate name</h2>
-                                    <h3 className="certificate_uni">University</h3>
-                                </div>
-                            </FadeUp>
-                            <FadeUp>
-                                <div className="certificate">
+                                    <h2 className="certificate_name">Python 3 programming</h2>
+                                    <h3 className="certificate_uni">University of Michigan</h3>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="certificate primary bottom_animation">
                                     <img alt ="" className="certificate_image" src={Python3}/>
-                                    <h2 className="certificate_name">Certificate name</h2>
-                                    <h3 className="certificate_uni">University</h3>
-                                </div>
-                            </FadeUp>
-                            <FadeUp>
-                                <div className="certificate">
+                                    <h2 className="certificate_name">Front-End Developer</h2>
+                                    <h3 className="certificate_uni">Meta</h3>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="certificate bottom_animation">
                                     <img alt ="" className="certificate_image" src={Python3}/>
-                                    <h2 className="certificate_name">Certificate name</h2>
-                                    <h3 className="certificate_uni">University</h3>
-                                </div>
-                            </FadeUp>
-                            <FadeUp>
-                                <div className="certificate">
+                                    <h2 className="certificate_name">Using Python for Research</h2>
+                                    <h3 className="certificate_uni">Harvard University</h3>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="certificate bottom_animation">
                                     <img alt ="" className="certificate_image" src={Python3}/>
-                                    <h2 className="certificate_name">Certificate name</h2>
-                                    <h3 className="certificate_uni">University</h3>
-                                </div>
-                            </FadeUp>
-                            <FadeUp>
-                                <div className="certificate">
+                                    <h2 className="certificate_name">Java programming</h2>
+                                    <h3 className="certificate_uni">Duke University</h3>
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="certificate bottom_animation">
                                     <img alt ="" className="certificate_image" src={Python3}/>
-                                    <h2 className="certificate_name">Certificate name</h2>
-                                    <h3 className="certificate_uni">University</h3>
-                                </div>
-                            </FadeUp>
-                            <FadeUp>
-                                <div className="certificate">
-                                    <img alt ="" className="certificate_image" src={Python3}/>
-                                    <h2 className="certificate_name">Certificate name</h2>
-                                    <h3 className="certificate_uni">University</h3>
-                                </div>
-                            </FadeUp>
+                                    <h2 className="certificate_name">Using Python to Access Web Data</h2>
+                                    <h3 className="certificate_uni">University of Michigan</h3>
+                            </VisibilityDiv>
                         </div>
-                        <FadeUp>
+                        <VisibilityDiv classname="bottom_animation">
                                 <a rel="noopener noreferrer" target="_blank" href="https://www.coursera.org/user/ab73ee8c75b35fed6edaa053000e7cb4" className="certificates_button">See more</a>
-                        </FadeUp>
+                        </VisibilityDiv>
                     </section>
                     <section className="timeline_section">
-                        <FadeUp>
+                        <VisibilityDiv classname="bottom_animation">
                             <h1>Timeline</h1>
-                        </FadeUp>
+                        </VisibilityDiv>
                         <div className="timeline">
-                            <FadeLeft>
-                                <div className="time_data left">
+                            <VisibilityDiv classname="time_data left left_animation">
                                     <div className="time_text">
                                         <h2>Gymnasium A+</h2>
                                         <h3>2022</h3>
@@ -182,10 +163,8 @@ export const Main = () =>{
                                     <div>
                                         <img alt="" src={gymnasium} className="time_img"/>
                                     </div>
-                                </div>
-                            </FadeLeft>
-                            <FadeLeft>
-                                <div className="time_data right">
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="time_data right left_animation">
                                     <div className="time_text">
                                         <h2>University of Southampton</h2>
                                         <h3>2022-23</h3>
@@ -194,10 +173,8 @@ export const Main = () =>{
                                     <div>
                                         <img alt="" src={uni_logo} className="time_img"/>
                                     </div>
-                                </div>
-                            </FadeLeft>
-                            <FadeLeft>
-                                <div className="time_data left">
+                            </VisibilityDiv>
+                            <VisibilityDiv classname="time_data left left_animation">
                                     <div className="time_text">
                                         <h2>University of Southampton</h2>
                                         <h3>2023-26</h3>
@@ -206,8 +183,7 @@ export const Main = () =>{
                                     <div>
                                         <img alt="" src={uni_logo} className="time_img"/>
                                     </div>
-                                </div>
-                            </FadeLeft>
+                            </VisibilityDiv>
                         </div>
                     </section>
                 </main>

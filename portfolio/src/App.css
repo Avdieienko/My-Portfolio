@@ -375,9 +375,9 @@ header img:hover{
 
 .certificates{
   display: grid;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto auto auto auto;
   grid-template-rows: auto auto;
-  row-gap: 10%;
+  row-gap: 5%;
   padding-top: 1%;
   padding-bottom: 10%;
   padding-left: 5%;
@@ -391,23 +391,47 @@ header img:hover{
   border: transparent solid 4px;
 }
 .certificate{
+  grid-column:span 2;
   position: relative;
+}
+
+.primary{
+  grid-column: span 3;
+}
+.primary .certificate_image{
+  width:35vw;
+}
+
+.certificate_name{
+  font-size: 2vw;
 }
 
 .certificate_name, .certificate_uni{
   position: absolute;
   margin:0;
   transition: 0.3s;
-  left:5%;
+  left:7%;
+  text-align: left;
+  width:90%;
 }
 
 .certificate_name{
-  top:50%;
+  top:45%;
 }
 .certificate_uni{
-  top:70%;
+  top:75%;
+  color:white;
 }
 
+.primary .certificate_name, .primary .certificate_uni{
+  left:10%;
+}
+.primary .certificate_name{
+  font-size: 2.8vw;
+}
+.primary .certificate_uni{
+  font-size: 1.8vw;
+}
 .certificates_button{
   padding:1% 5% 1% 5%;
   border-radius: 16px;
@@ -446,14 +470,22 @@ header img:hover{
     padding-bottom: 27%;
     margin-bottom: 2%;
   }
-  .certificate_image{
+  .certificate_name, .primary .certificate_name{
+    font-size: 4.8vw;
+    width:78%;
+    top:50%;
+  }
+  .certificate_image, .primary .certificate_image{
     width:70vw;
     opacity: 0.5;
     transition: 0.3s;
     border: transparent solid 4px;
   }
-  .certificate_name, .certificate_uni{
+  .certificate_name, .certificate_uni, .primary .certificate_name,.primary .certificate_uni{
     left:14%;
+  }
+  .primary .certificate_uni{
+    font-size: 4vw;
   }
   .certificates_button{
     padding:3% 8% 3% 8%;
@@ -465,6 +497,9 @@ header img:hover{
   }
   .certificates_section{
     padding-bottom: 10%;
+  }
+  .certificate{
+    grid-column: span 1;
   }
 }
 
@@ -603,9 +638,6 @@ footer h4{
 
 .socials{
   display: none;
-}
-.socials img{
-  width:2vw;
 }
 
 @media (orientation:portrait){
