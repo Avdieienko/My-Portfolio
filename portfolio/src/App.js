@@ -8,26 +8,32 @@ import logo from "./images/logo.svg"
 function App() {
   const [loading,setLoading] = useState(false);
 
-useEffect(()=>{
-  setLoading(true)
-  setTimeout(() =>{
-    setLoading(false)
-  },3000)
-},[])
+
+
+  const [loaded,setLoaded] = useState(false);
+
+  useEffect(()=>{
+    setLoading(true)
+    if(loaded){
+      setTimeout(() =>{
+        setLoading(false)
+      },3000)
+    }
+  },[loaded])
 
   return (
     <>
     {
       loading ?
-      <div className='App'>
-        <img alt="logo" src={logo}></img>
-        <PropagateLoader
+      <div className={`App ${loaded ? "loaded_app":""}`}>
+        <img className={loaded ? "loaded_img" : ""} alt="logo" src={logo} onLoad={() =>setLoaded(true)}></img>
+        {loaded?<PropagateLoader
           color="#baff39"
           loading={loading}
           size={10}
           speedMultiplier="1.5"
           aria-label="Loading Spinner"
-        />
+        />:""}
       </div>
       :
 

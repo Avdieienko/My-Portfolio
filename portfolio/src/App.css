@@ -17,7 +17,11 @@
   justify-content: center;
   align-items: center;
   font-weight: "Open Sans", sans-serif;
-  animation-duration: 3s;
+
+}
+
+.loaded_app{
+  animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
   animation-name: opaciter;
 }
@@ -25,7 +29,10 @@
 .App img{
   width:15vh;
   margin-bottom: 4vh;
-  animation-duration: 3s;
+}
+
+.loaded_img{
+  animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
   animation-name: loading;
 }
@@ -780,7 +787,7 @@ footer h4{
 
 @keyframes left-animation {
   0%{
-    transform: translateX(10%);
+    transform: translateX(5%);
     opacity: 0;
   }
   100%{
@@ -806,7 +813,7 @@ footer h4{
 
 @media (orientation:portrait){
   .left_animation{
-    transform: translateX(10%);
+    transform: translateX(5%);
     opacity: 0;
   }
   .left_animation.visible{
