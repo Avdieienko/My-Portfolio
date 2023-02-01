@@ -301,7 +301,7 @@ header img:hover{
 .greeting_portrait{
   position: absolute;
   width:22vw;
-  top:43.5%;
+  top:46%;
   left:77.7%;
 }
 
@@ -315,7 +315,7 @@ header img:hover{
   .greeting_portrait{
     position: absolute;
     width:40vw;
-    top:66.5%;
+    top:64%;
     left:60%;
   }
 }
@@ -775,6 +775,8 @@ footer h4{
   animation-name: bottom-animation;
   animation-timing-function: ease-in-out;
 }
+
+
 
 @keyframes ball {
   0%{

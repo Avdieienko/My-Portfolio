@@ -1,6 +1,6 @@
 import logo from "./images/logo.svg";
 import contactMe from "./images/contact_me.svg";
-import portrait_main from "./images/portrait.svg";
+import portrait_main from "./images/portrait.webp";
 import insta from "./images/insta.webp";
 import twitter from "./images/twitter.webp";
 import facebook from "./images/facebook.webp";
@@ -19,6 +19,10 @@ import cplus from "./images/c++.webp";
 import java from "./images/java.webp";
 import react_png from "./images/react.webp";
 import Python3 from "./images/Python3.webp";
+import meta_certificate from "./images/meta_certificate.webp"
+import python_web from "./images/python_web.webp"
+import harvard_certificate from "./images/harvard_certificate.webp"
+import duke_certificate from "./images/duke_certificate.webp"
 import gymnasium from "./images/gymnasium.webp";
 import uni_logo from "./images/uni_logo.webp";
 import {VisibilityDiv } from "./OnScreen";
@@ -51,18 +55,14 @@ export const Main = () =>{
                 <main>
                     <section className="welcome_section">
                         <div className="portrait_wrapper">
-                            <VisibilityDiv classname="bottom_animation">
-                                <img className="portrait" alt="Portrait" src={portrait_main}></img>
-                            </VisibilityDiv>
+                            <img className="bottom_animation visible portrait" alt="Portrait" src={portrait_main}></img>
                             <img className="ball" alt="Ball" src={ball}></img>
                             <img className="car" alt="Car" src={f1_car}></img>
                         </div>
-                        <div className="greeting_wrapper">
-                        <VisibilityDiv classname="bottom_animation">
+                        <div className="bottom_animation visible greeting_wrapper">
                             <h1 className="greeting">Hi, my name is</h1>
                             <h1 className="name">Dmytro Avdieienko</h1>
-                            <h3 className="degree">Bsc Computer Science, Soton '23</h3>
-                        </VisibilityDiv>
+                            <h3 className="visible degree">Bsc Computer Science, Soton '23</h3>
                         </div>
                     </section>
                     <section className="scroll_wrapper">
@@ -75,9 +75,9 @@ export const Main = () =>{
                         </VisibilityDiv>
                         <VisibilityDiv classname="bottom_animation">
                         <p className="about_me">
-                            Born in Kyiv, Ukraine.<img alt="Ukrainian flag" src={flag}/> I am 17 years old and studying at the University of Southampton.<br/><br/>
-                            My interests include software engineering, artificial intelligence, and machine learning.
-                            Python developer, Software developer, Web developer Intern.<br/><br/>
+                            Born in Kyiv, Ukraine.<img alt="Ukrainian flag" src={flag}/> I am 17 years old computer science student at the University of Southampton<br/><br/>
+                            Keen on software engineering, artificial intelligence, and machine learning.
+                            Hard-working and ambitious.<br/><br/>
                             Undergoing UFP at Soton with progression degree as Bsc Computer Science. Plans include Meng in Artificial Intelligence.🖥️
                         </p>
                         </VisibilityDiv>
@@ -89,28 +89,28 @@ export const Main = () =>{
                         </VisibilityDiv>
                         <div className="skills">
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={cplus}/>
+                            <img className="skill" alt="C++" src={cplus}/>
                             </VisibilityDiv>
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={java}/>
+                            <img className="skill" alt="Java" src={java}/>
                             </VisibilityDiv>
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={python}/>
+                            <img className="skill" alt="Python" src={python}/>
                             </VisibilityDiv>
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={javascript}/>
+                            <img className="skill" alt="Javascript" src={javascript}/>
                             </VisibilityDiv>
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={react_png}/>
+                            <img className="skill" alt="React" src={react_png}/>
                             </VisibilityDiv>
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={html}/>
+                            <img className="skill" alt="HTML" src={html}/>
                             </VisibilityDiv>
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={css}/>
+                            <img className="skill" alt="CSS" src={css}/>
                             </VisibilityDiv>
                             <VisibilityDiv classname="bottom_animation">
-                            <img className="skill" alt="" src={git}/>
+                            <img className="skill" alt="Git" src={git}/>
                             </VisibilityDiv>
                         </div>
                     </section>
@@ -120,27 +120,27 @@ export const Main = () =>{
                         </VisibilityDiv>
                         <div className="certificates">
                             <VisibilityDiv classname="certificate primary bottom_animation">
-                                    <img alt ="" className="certificate_image" src={Python3}/>
+                                    <img alt ="Python 3 Programming" className="certificate_image" src={Python3}/>
                                     <h2 className="certificate_name">Python 3 programming</h2>
                                     <h3 className="certificate_uni">University of Michigan</h3>
                             </VisibilityDiv>
                             <VisibilityDiv classname="certificate primary bottom_animation">
-                                    <img alt ="" className="certificate_image" src={Python3}/>
+                                    <img alt ="Meta Front-End developer" className="certificate_image" src={meta_certificate}/>
                                     <h2 className="certificate_name">Front-End Developer</h2>
                                     <h3 className="certificate_uni">Meta</h3>
                             </VisibilityDiv>
                             <VisibilityDiv classname="certificate bottom_animation">
-                                    <img alt ="" className="certificate_image" src={Python3}/>
+                                    <img alt ="Using Python for Research" className="certificate_image" src={harvard_certificate}/>
                                     <h2 className="certificate_name">Using Python for Research</h2>
                                     <h3 className="certificate_uni">Harvard University</h3>
                             </VisibilityDiv>
                             <VisibilityDiv classname="certificate bottom_animation">
-                                    <img alt ="" className="certificate_image" src={Python3}/>
+                                    <img alt ="Java Programming" className="certificate_image" src={duke_certificate}/>
                                     <h2 className="certificate_name">Java programming</h2>
                                     <h3 className="certificate_uni">Duke University</h3>
                             </VisibilityDiv>
                             <VisibilityDiv classname="certificate bottom_animation">
-                                    <img alt ="" className="certificate_image" src={Python3}/>
+                                    <img alt ="Using Python to Access Web Data" className="certificate_image" src={[python_web]}/>
                                     <h2 className="certificate_name">Using Python to Access Web Data</h2>
                                     <h3 className="certificate_uni">University of Michigan</h3>
                             </VisibilityDiv>
@@ -161,7 +161,7 @@ export const Main = () =>{
                                         <p>Graduated from High School at Gymnasium A+, a private school in Kyiv, Ukraine, near the top of my class.</p>
                                     </div>
                                     <div>
-                                        <img alt="" src={gymnasium} className="time_img"/>
+                                        <img alt="Gymnasium A+" src={gymnasium} className="time_img"/>
                                     </div>
                             </VisibilityDiv>
                             <VisibilityDiv classname="time_data right left_animation">
@@ -171,7 +171,7 @@ export const Main = () =>{
                                         <p>Currently undergoing Undergraduate Foundation Programme at University of Southampton, top 10 UK University for Computer Science and Engineering</p>
                                     </div>
                                     <div>
-                                        <img alt="" src={uni_logo} className="time_img"/>
+                                        <img alt="University of Southampton" src={uni_logo} className="time_img"/>
                                     </div>
                             </VisibilityDiv>
                             <VisibilityDiv classname="time_data left left_animation">
@@ -181,7 +181,7 @@ export const Main = () =>{
                                         <p>Will be doing Bsc Computer Science starting from 2023</p>
                                     </div>
                                     <div>
-                                        <img alt="" src={uni_logo} className="time_img"/>
+                                        <img alt="University of Southampton" src={uni_logo} className="time_img"/>
                                     </div>
                             </VisibilityDiv>
                         </div>
