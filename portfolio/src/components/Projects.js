@@ -1,10 +1,12 @@
 import { VisibilityDiv } from "./OnScreen"
 import { useState } from "react"
-import Python3 from "../images/Python3.webp";
-import meta_certificate from "../images/meta_certificate.webp"
-import python_web from "../images/python_web.webp"
-import harvard_certificate from "../images/harvard_certificate.webp"
-import duke_certificate from "../images/duke_certificate.webp"
+import "../styles/Projects.css"
+import restaurant from "../images/restaurant.png"
+import flight from "../images/flight.png"
+import statistic from "../images/statistic.png"
+import security from "../images/security.png"
+import sort from "../images/sort.png"
+
 
 
 export const Projects = ()=>{
@@ -14,35 +16,33 @@ export const Projects = ()=>{
 
     const projectsList = [{
         "title":"Project 1",
-        "image":meta_certificate
+        "image":restaurant
     },
     {
         "title":"Project 2",
-        "image":harvard_certificate
+        "image":flight
     },
     {
         "title":"Project 3",
-        "image":python_web
+        "image":statistic
     },
     {
         "title":"Project 4",
-        "image":duke_certificate
+        "image":security
     },
     {
         "title":"Project 5",
-        "image":Python3
+        "image":sort
     }]
 
 
     const handleClick = (e) => {
-        console.log(primary)
         if(primary+e ===-1 || primary+e === projectsList.length) return;
         const leftInvisibleStyle = document.getElementById(`${primary-2}`);
         const rightInvisibleStyle = document.getElementById(`${primary+2}`);
         const mainStyle = document.getElementById(`${primary}`);
         const leftHelperStyle = document.getElementsByClassName("project helper left")[0]
         const rightHelperStyle = document.getElementsByClassName("project helper right")[0]
-        console.log(leftInvisibleStyle,rightInvisibleStyle,mainStyle,leftHelperStyle,rightHelperStyle)
         if(e === -1){
             if(leftInvisibleStyle!==undefined){
                 setTimeout(()=>{
@@ -132,7 +132,6 @@ export const Projects = ()=>{
                         return(
                             <>
                                 <div key={i} className={`project helper ${i === primary+1 ? "right":"left"}`}>
-                                    <h1 className="project_title helper">{project["title"]}</h1>
                                     <img alt="project" className="project_image helper" src={project["image"]}/>
                                 </div>
                             </>
@@ -142,7 +141,6 @@ export const Projects = ()=>{
                         return(
                             <>
                                 <div key={i} id={i} className="project">
-                                    <h1 className="project_title">{project["title"]}</h1>
                                     <img alt="project" className="project_image" src={project["image"]}/>
                                 </div>
                             </>
@@ -152,7 +150,6 @@ export const Projects = ()=>{
                         return(
                             <>
                                 <div id={i} key={i} className={`project  invisible ${i>primary ? "right":"left"}`}>
-                                    <h1 className="project_title invisible">{project["title"]}</h1>
                                     <img alt="project" className="project_image invisible" src={project["image"]}/>
                                 </div>
                             </>
@@ -162,6 +159,9 @@ export const Projects = ()=>{
                 <div className="clicker_right" onClick={()=>{handleClick(1)}}>
                     <h1>{">"}</h1>
                 </div>
+            </div>
+            <div className="project_description">
+                <h1>{projectsList[primary]["title"]}</h1>
             </div>
         </section>
     )
