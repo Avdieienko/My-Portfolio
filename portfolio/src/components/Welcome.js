@@ -1,6 +1,7 @@
 import portrait_main from "../images/portrait.webp";
 import f1_car from "../images/f1_car.png";
 import ball from "../images/ball.png";
+import "../styles/Welcome.css"
 
 
 export const Welcome = () =>{

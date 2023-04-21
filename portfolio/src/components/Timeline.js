@@ -1,6 +1,8 @@
 import gymnasium from "../images/gymnasium.webp";
 import uni_logo from "../images/uni_logo.webp";
 import {VisibilityDiv } from "./OnScreen";
+import "../styles/Timeline.css"
+
 
 
 
@@ -11,7 +13,7 @@ export const Timeline = ()=>{
                 <h1>Timeline</h1>
             </VisibilityDiv>
             <div className="timeline">
-                <VisibilityDiv classname="time_data left left_animation">
+                <VisibilityDiv classname="time_data time_left left_animation">
                         <div className="time_text">
                             <h2>Gymnasium A+</h2>
                             <h3>2022</h3>
@@ -21,7 +23,7 @@ export const Timeline = ()=>{
                             <img alt="Gymnasium A+" src={gymnasium} className="time_img"/>
                         </div>
                 </VisibilityDiv>
-                <VisibilityDiv classname="time_data right left_animation">
+                <VisibilityDiv classname="time_data time_right left_animation">
                         <div className="time_text">
                             <h2>University of Southampton</h2>
                             <h3>2022-23</h3>
@@ -31,7 +33,7 @@ export const Timeline = ()=>{
                             <img alt="University of Southampton" src={uni_logo} className="time_img"/>
                         </div>
                 </VisibilityDiv>
-                <VisibilityDiv classname="time_data left left_animation">
+                <VisibilityDiv classname="time_data time_left left_animation">
                         <div className="time_text">
                             <h2>University of Southampton</h2>
                             <h3>2023-26</h3>

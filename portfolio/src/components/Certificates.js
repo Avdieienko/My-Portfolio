@@ -4,6 +4,8 @@ import python_web from "../images/python_web.webp"
 import harvard_certificate from "../images/harvard_certificate.webp"
 import duke_certificate from "../images/duke_certificate.webp"
 import { VisibilityDiv } from "./OnScreen";
+import "../styles/Certificates.css"
+
 
 
 export const Certificates = ()=>{

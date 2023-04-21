@@ -1,0 +1,39 @@
+/*--------------------About me section----------------*/
+
+.aboutme_section{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: #383838;
+    padding-bottom: 9%;
+  }
+  .about_me{
+    width:70%;
+    padding-left: 8%;
+  }
+  .about_me img{
+    width:2vw;
+  }
+  
+  .greeting_portrait{
+    position: absolute;
+    width:22vw;
+    top:51%;
+    left:77.7%;
+  }
+  
+  @media (orientation:portrait){
+    .about_me img{
+      width:5vw;
+    }
+    .about_me{
+      padding-right: 12%;
+    }
+    .greeting_portrait{
+      position: absolute;
+      width:40vw;
+      top:68%;
+      left:60%;
+    }
+  }

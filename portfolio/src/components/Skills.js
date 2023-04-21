@@ -7,6 +7,7 @@ import cplus from "../images/c++.webp";
 import java from "../images/java.webp";
 import react_png from "../images/react.webp";
 import { VisibilityDiv } from "./OnScreen";
+import "../styles/Skills.css"
 
 
 export const Skills =()=>{

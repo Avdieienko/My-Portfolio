@@ -4,6 +4,8 @@ import twitter from "../images/twitter.webp";
 import facebook from "../images/facebook.webp";
 import github from "../images/github.webp";
 import linkedin from "../images/linkedin.webp";
+import "../styles/Footer.css"
+
 
 
 export const Footer = ()=>{

@@ -1,5 +1,7 @@
 import logo from "../images/logo.svg";
 import contactMe from "../images/contact_me.svg";
+import "../styles/Header.css"
+
 
 export const Header = ()=>{
     return(

@@ -1,0 +1,21 @@
+/*----------------Header------------------*/
+
+header{
+    position: sticky;
+    top:10px;
+    background-color: transparent;
+    z-index: 99;
+    margin:0% 3% 0% 3%;
+  }
+  
+  header div{
+    display: flex;
+    justify-content: space-between;
+  }
+  header img{
+    width:6vw;
+    transition: 0.2s;
+  }
+  header img:hover{
+    transform: scale(1.2);
+  }

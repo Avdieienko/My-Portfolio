@@ -1,6 +1,8 @@
 import greeting_portrait from "../images/greeting_portrait.webp";
 import flag from "../images/flag.png";
 import {VisibilityDiv } from "./OnScreen";
+import "../styles/AboutMe.css"
+
 
 
 export const AboutMe = ()=>{

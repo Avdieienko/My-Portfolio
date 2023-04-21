@@ -1,0 +1,116 @@
+/*--------------------Welcome section----------------*/
+
+.welcome_section{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  
+  .portrait{
+    width:45vw;
+    position: relative;
+    top:0%;
+  }
+  .portrait_wrapper{
+    align-items: center;
+  }
+  .greeting_wrapper{
+    padding-left:10%;
+    padding-top:5%;
+  }
+  .greeting{
+    font-size:2vw;
+  }
+  .name{
+    font-size:5vw;
+    margin:0;
+  }
+  .degree{
+    color:white;
+  }
+  
+  .ball, .car{
+    width:4vw;
+    position: relative;
+  }
+  .ball{
+    top:-75%;
+    left:12%;
+  }
+  .car{
+    top:-55%;
+    left:82%;
+  }
+  
+  @media (orientation:portrait) {
+    .welcome_section{
+      align-items: center;
+      flex-direction: column;
+      margin-top: 90%;
+    }
+    .portrait_wrapper{
+      position: absolute;
+      top:13%
+    }
+    .portrait{
+      width: 80vw;
+      position: relative;
+      top:0%
+    }
+    .ball{
+      width:6vw;
+      position: absolute;
+      top:14%;
+      left:15%;
+    }
+    .car{
+      width:6vw;
+      position: absolute;
+      top:35%;
+      left:95%;
+    }
+    .greeting{
+      font-size:4vw;
+    }
+    .name{
+      font-size:12vw;
+      margin:0;
+    }
+    .degree{
+      font-size:4vw;
+      color:white;
+    }
+    header img{
+      width:13vw;
+    }
+  }
+  
+  /*--------------------Scroll section----------------*/
+  
+  
+  .scroll_wrapper{
+    margin-top: -15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .scroll_wrapper h3{
+    margin-bottom: 0;
+  }
+  
+  .scroll_wrapper hr{
+    height:50vh;
+    border-left: 1px solid #BAFF39;
+  }
+  @media (orientation:portrait) {
+    .scroll_wrapper{
+      margin-top: 8%;
+    }
+    .scroll_wrapper h3{
+      font-size: 4vw;
+    }
+  }
