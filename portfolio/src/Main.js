@@ -16,8 +16,8 @@ export const Main = () =>{
                     <Welcome/>
                     <AboutMe/>
                     <Skills/>
-                    <Projects/>
                     <Certificates/>
+                    <Projects/>
                     <Timeline/>
                 </main>
                 <Footer/>
