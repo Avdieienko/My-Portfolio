@@ -10,6 +10,7 @@ import python from "../images/python.webp";
 import react_png from "../images/react.webp";
 import html from "../images/html.webp";
 import css from "../images/css.webp";
+import javascript from "../images/javascript.webp";
 
 
 
@@ -36,14 +37,14 @@ export const Projects = ()=>{
     {
         "title":"Japanese restaurant",
         "image":restaurant,
-        "skills":[react_png, html,css],
+        "skills":[react_png,javascript, html,css],
         "link":"https://avdieienko.com/restaurant/",
         "description":"Website for an imaginary japanese restaurant, with all functionality (except back-end)"
     },
     {
         "title":"Sorting Visualiser",
         "image":sort,
-        "skills":[react_png, html,css],
+        "skills":[react_png,javascript, html,css],
         "link":"https://avdieienko.com/sorter",
         "description":"React web app with visualisation of array sorting using different algorithms"
     },
