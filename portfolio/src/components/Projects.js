@@ -31,7 +31,7 @@ export const Projects = ()=>{
         "image":flight,
         "skills":[python],
         "link":"https://github.com/Avdieienko/FlightAnalysis",
-        "description":"Dataframe for each flight, link for scraped website, and a graph with cheapest average and maximum ticket price for each day in the given date range."
+        "description":"Dataframe for each flight, link for scraped website, and a graph with cheapest, average, and maximum ticket price for each day in the given date range."
     },
     {
         "title":"Japanese restaurant",

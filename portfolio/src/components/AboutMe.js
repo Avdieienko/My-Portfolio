@@ -13,7 +13,7 @@ export const AboutMe = ()=>{
             </VisibilityDiv>
             <VisibilityDiv classname="bottom_animation">
             <p className="about_me">
-                Born in Kyiv, Ukraine.<img alt="Ukrainian flag" src={flag}/> I am 18 years old computer science student at the University of Southampton<br/><br/>
+                Born in Kyiv, Ukraine.<img alt="Ukrainian flag" src={flag}/> I am a computer science student at the University of Southampton.<br/><br/>
                 Keen on software engineering, artificial intelligence, and machine learning.
                 Hard-working, ambitious and flexible.<br/><br/>
                 Undergoing UFP at Soton with progression degree as Bsc Computer Science. Plans include Meng in Artificial Intelligence.🖥️<br/><br/>

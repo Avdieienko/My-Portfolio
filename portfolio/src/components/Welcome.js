@@ -16,7 +16,7 @@ export const Welcome = () =>{
             <div className="bottom_animation visible greeting_wrapper">
                 <h1 className="greeting">Hi, my name is</h1>
                 <h1 className="name">Dmytro Avdieienko</h1>
-                <h3 className="visible degree">Bsc Computer Science, Soton '23</h3>
+                <h3 className="visible degree">Bsc Computer Science, Soton</h3>
             </div>
         </section>
         <section className="scroll_wrapper">
