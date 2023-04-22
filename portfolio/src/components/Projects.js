@@ -44,7 +44,7 @@ export const Projects = ()=>{
         "title":"Sorting Visualiser",
         "image":sort,
         "skills":[react_png, html,css],
-        "link":"https://github.com/Avdieienko/react_sort",
+        "link":"https://avdieienko.com/sorter",
         "description":"React web app with visualisation of array sorting using different algorithms"
     },
     {
