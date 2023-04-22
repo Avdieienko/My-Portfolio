@@ -195,7 +195,7 @@ export const Projects = ()=>{
             <div className="project_description_wrapper">
                 <p className="project_description">{projectsList[primary]["description"]}</p>
             </div>
-            <VisibilityDiv classname="bottom_animation">
+            <VisibilityDiv classname="bottom_animation explore">
                     <a rel="noopener noreferrer" target="_blank" href={projectsList[primary]["link"]} className="certificates_button">Explore</a>
             </VisibilityDiv>
         </section>

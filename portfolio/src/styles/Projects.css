@@ -1,5 +1,4 @@
 .projects_section{
-    padding-bottom: 3%;
     padding-left:2%;
     text-align: center;
 }
@@ -254,9 +253,6 @@
     max-width:60vw
   }
   
-  .project_description_wrapper{
-    padding-bottom: 6%;
-  }
   .project_description{
     font-size: 2vw;
     width:60vw;
@@ -266,6 +262,9 @@
     margin-bottom: 0;
   }
 
+  .explore{
+    margin: 5% 0%;
+  }
 
 
 @media (orientation:portrait) {
@@ -286,6 +285,9 @@
     }
     .project_title{
       font-size: 6vw;
+    }
+    .explore{
+      margin: 10% 0%;
     }
 }
 
