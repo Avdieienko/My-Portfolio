@@ -6,6 +6,11 @@ import flight from "../images/flight.png"
 import statistic from "../images/statistic.png"
 import security from "../images/security.png"
 import sort from "../images/sort.png"
+import python from "../images/python.webp";
+import react_png from "../images/react.webp";
+import html from "../images/html.webp";
+import css from "../images/css.webp";
+
 
 
 
@@ -15,24 +20,39 @@ export const Projects = ()=>{
 
 
     const projectsList = [{
-        "title":"Project 1",
-        "image":restaurant
+        "title":"Security camera",
+        "image":security,
+        "skills":[python],
+        "link":"https://github.com/Avdieienko/Security-camera",
+        "description":"Detecting the movement and face on the camera, highlighting it, and capturing"
     },
     {
-        "title":"Project 2",
-        "image":flight
+        "title":"Flight Route Analysis",
+        "image":flight,
+        "skills":[python],
+        "link":"https://github.com/Avdieienko/FlightAnalysis",
+        "description":"Dataframe for each flight, link for scraped website, and a graph with cheapest average and maximum ticket price for each day in the given date range."
     },
     {
-        "title":"Project 3",
-        "image":statistic
+        "title":"Japanese restaurant",
+        "image":restaurant,
+        "skills":[react_png, html,css],
+        "link":"https://avdieienko.com/restaurant/",
+        "description":"Website for an imaginary japanese restaurant, with all functionality (except back-end)"
     },
     {
-        "title":"Project 4",
-        "image":security
+        "title":"Sorting Visualiser",
+        "image":sort,
+        "skills":[react_png, html,css],
+        "link":"https://github.com/Avdieienko/react_sort",
+        "description":"React web app with visualisation of array sorting using different algorithms"
     },
     {
-        "title":"Project 5",
-        "image":sort
+        "title":"Statistical learning model comparison",
+        "image":statistic,
+        "skills":[python],
+        "link":"https://github.com/Avdieienko/statistical_learning_models_comparison",
+        "description":"The comparison graph of two regression and classification models accuracy score for revenue prediction and profitability classification based on a database of 5000 movies catalogued by The Movie Database (TMDb)"
     }]
 
 
@@ -121,7 +141,7 @@ export const Projects = ()=>{
     return(
         <section className="projects_section">
             <VisibilityDiv classname="bottom animation">
-                <h1>Projects</h1>
+                <h1 className="projects_section_title">Projects</h1>
             </VisibilityDiv>
             <div className="projects_wrapper">
                 <div className="clicker_left" onClick={()=>{handleClick(-1)}}>
@@ -131,7 +151,7 @@ export const Projects = ()=>{
                     if(i === primary-1 || i ===primary+1){
                         return(
                             <>
-                                <div key={i} className={`project helper ${i === primary+1 ? "right":"left"}`}>
+                                <div key={project["title"]} className={`project helper ${i === primary+1 ? "right":"left"}`}>
                                     <img alt="project" className="project_image helper" src={project["image"]}/>
                                 </div>
                             </>
@@ -140,7 +160,7 @@ export const Projects = ()=>{
                     else if(i===primary){
                         return(
                             <>
-                                <div key={i} id={i} className="project">
+                                <div key={project["title"]} id={i} className="project">
                                     <img alt="project" className="project_image" src={project["image"]}/>
                                 </div>
                             </>
@@ -149,7 +169,7 @@ export const Projects = ()=>{
                     else{
                         return(
                             <>
-                                <div id={i} key={i} className={`project  invisible ${i>primary ? "right":"left"}`}>
+                                <div id={i} key={project["title"]} className={`project  invisible ${i>primary ? "right":"left"}`}>
                                     <img alt="project" className="project_image invisible" src={project["image"]}/>
                                 </div>
                             </>
@@ -160,9 +180,24 @@ export const Projects = ()=>{
                     <h1>{">"}</h1>
                 </div>
             </div>
-            <div className="project_description">
-                <h1>{projectsList[primary]["title"]}</h1>
+            <div className="project_info">
+                <div>
+                    <h1 className="project_title">{projectsList[primary]["title"]}</h1>
+                </div>
+                <div className="project_skills">
+                    {projectsList[primary]["skills"].map((skill,i)=>{
+                        return(
+                            <img alt={projectsList[primary]["title"]} className="project_skill" src={skill} key={i}></img>
+                        )
+                    })}
+                </div>
             </div>
+            <div className="project_description_wrapper">
+                <p className="project_description">{projectsList[primary]["description"]}</p>
+            </div>
+            <VisibilityDiv classname="bottom_animation">
+                    <a rel="noopener noreferrer" target="_blank" href={projectsList[primary]["link"]} className="certificates_button">Explore</a>
+            </VisibilityDiv>
         </section>
     )
 }
