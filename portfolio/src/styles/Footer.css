@@ -1,10 +1,11 @@
 /*--------------Footer----------------*/
 
 footer{
-    margin-top: 5%;
+    padding-top: 5%;
     text-align: center;
     color:#929495;
-    margin-bottom: 2%;
+    padding-bottom: 2%;
+    background-color: #383838;
   }
   
   footer h4{
@@ -47,6 +48,9 @@ footer{
     }
     footer h4{
       font-size: 2vw;
+    }
+    footer{
+      margin-top: 1%;
     }
   }
 
