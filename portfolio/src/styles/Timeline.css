@@ -30,6 +30,7 @@
     position: relative;
     align-items: center;
     text-align: center;
+    height:150vh;
   }
   .timeline::after{
     content: " ";
@@ -44,15 +45,14 @@
   .time_data{
     display: flex;
     flex-direction: row;
-    padding-bottom: 10%;
   }
   .time_left{
-    margin-left: 7.7%;
+    margin-left: 5%;
     text-align: end;
   }
   
   .time_right{
-    margin-right: 6.8%;
+    margin-right: 4.3%;
     flex-direction: row-reverse;
   }
   
@@ -68,15 +68,17 @@
   }
   .time_text p{
     font-weight: normal;
+    font-size: 1.2vw;
   }
   
   @media (orientation:portrait){
     .timeline{
       align-items: left;
       text-align: left;
+      height:100%;
     }
     .timeline::after{
-      left:8%;
+      left:10%;
       width:1vw;
     }
     .time_left, .time_right{
@@ -103,5 +105,9 @@
     }
     .time_data{
     padding-bottom: 20%;
+    }
+    .time_text p{
+    font-weight: normal;
+    font-size: 2vw;
     }
   }
