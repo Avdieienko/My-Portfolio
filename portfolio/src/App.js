@@ -10,7 +10,7 @@ function App() {
 
 
 
-  const [loaded,setLoaded] = useState(false);
+  const loaded = true
 
   useEffect(()=>{
     setLoading(true)
@@ -26,7 +26,7 @@ function App() {
     {
       loading ?
       <div className={`App ${loaded ? "loaded_app":""}`}>
-        <img className={loaded ? "loaded_img" : ""} alt="logo" src={logo} onLoad={() =>setLoaded(true)}></img>
+        <h1 className={loaded ? "loaded_logo" : ""}>VDNK</h1>
         {loaded?<PropagateLoader
           color="#baff39"
           loading={loading}

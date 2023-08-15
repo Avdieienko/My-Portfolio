@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
 ::-moz-selection { /* Code for Firefox */
     background: #BAFF39;
@@ -9,7 +10,6 @@
   }
 .App {
   text-align: center;
-  background-color: #6E6E6E;
   height: 100vh;
   width:100%;
   display: flex;
@@ -26,15 +26,20 @@
   animation-name: opaciter;
 }
 
-.App img{
-  width:15vh;
-  margin-bottom: 4vh;
-}
-
-.loaded_img{
+.loaded_logo{
+  font-size: 15vw;
+  margin: 0;
+  font-family: 'Reenie Beanie', cursive;
   animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
   animation-name: loading;
+}
+
+@media (orientation:portrait) {
+  .loaded_logo{
+    font-size: 30vw;
+    margin: 5%;
+  }
 }
 
 
@@ -66,16 +71,11 @@
 }
 
 body{
-  background-color: #6E6E6E;
+  background-color:black;
 }
-
-main{
-  margin-top: 1%;
-}
-
 main section{
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 h1{
@@ -247,48 +247,6 @@ p{
   animation-timing-function: ease-in-out;
 }
 
-
-
-@keyframes ball {
-  0%{
-    transform: translateY(-900%);
-  }
-  100%{
-    transform: translateY(0%);
-  }
-}
-
-.ball{
-  animation-name: ball;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  transition: 5s;
-}
-.ball:hover{
-  transform: rotate(5turn);
-  transition: 5s;
-}
-
-@keyframes car {
-  0%{
-    transform: translateX(120%);
-    opacity: 0;
-  }
-  50%{
-    transform: translateX(120%);
-    opacity: 0;
-  }
-  100%{
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-.car{
-  animation-name: car;
-  animation-duration: 3.5s;
-  animation-timing-function: ease-in-out;
-}
 
 @keyframes left-animation {
   0%{
