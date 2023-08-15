@@ -1,6 +1,4 @@
 import portrait_main from "../images/portrait.webp";
-import f1_car from "../images/f1_car.png";
-import ball from "../images/ball.png";
 import "../styles/Welcome.css"
 
 
@@ -10,8 +8,6 @@ export const Welcome = () =>{
         <section className="welcome_section">
             <div className="portrait_wrapper">
                 <img className="bottom_animation visible portrait" alt="Portrait" src={portrait_main}></img>
-                <img className="ball" alt="Ball" src={ball}></img>
-                <img className="car" alt="Car" src={f1_car}></img>
             </div>
             <div className="bottom_animation visible greeting_wrapper">
                 <h1 className="greeting">Hi, my name is</h1>
