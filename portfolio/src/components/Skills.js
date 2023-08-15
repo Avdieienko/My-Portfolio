@@ -1,11 +1,4 @@
-import python from "../images/python.webp";
-import html from "../images/html.webp";
-import git from "../images/git.webp";
-import javascript from "../images/javascript.webp";
-import css from "../images/css.webp";
-import cplus from "../images/c++.webp";
-import java from "../images/java.webp";
-import react_png from "../images/react.webp";
+import {BiLogoJava, BiLogoReact, BiLogoHtml5,BiLogoCss3, BiLogoPython,BiLogoJavascript, BiLogoGit, BiLogoCPlusPlus} from "react-icons/bi"
 import { VisibilityDiv } from "./OnScreen";
 import "../styles/Skills.css"
 
@@ -18,28 +11,28 @@ export const Skills =()=>{
             </VisibilityDiv>
             <div className="skills">
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="C++" src={cplus}/>
+                    <BiLogoCPlusPlus className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="Java" src={java}/>
+                    <BiLogoPython className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="Python" src={python}/>
+                    <BiLogoJavascript className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="Javascript" src={javascript}/>
+                    <BiLogoReact className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="React" src={react_png}/>
+                    <BiLogoJava className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="HTML" src={html}/>
+                    <BiLogoHtml5 className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="CSS" src={css}/>
+                    <BiLogoCss3 className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <img className="skill" alt="Git" src={git}/>
+                    <BiLogoGit className="skill" color="#BAFF39" size={150}/>
                 </VisibilityDiv>
             </div>
         </section>

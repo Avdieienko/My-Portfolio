@@ -3,19 +3,18 @@
 .skills_section{
     text-align: center;
     padding-bottom: 3%;
+    height:100%;
   }
   
   .skills{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
-    gap:15%;
-    padding-left:20%;
-    padding-right:20%;
+    row-gap:10%;
     margin-top: 5%;
+    padding:0 10%;
   }
   .skill{
-    width:7vw;
     transition: .2s;
   }
   
@@ -27,13 +26,16 @@
     .skills{
       grid-template-columns: auto auto;
       grid-template-rows: auto auto auto auto;
+      height:40vh;
+      gap:5%;
     }
     .skill{
       width:15vw;
+      height: auto;
       margin:auto
     }
     .skills_section{
-      padding-bottom: 30%;
+      height:400%
     }
   }
   
