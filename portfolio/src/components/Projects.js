@@ -11,6 +11,7 @@ import react_png from "../images/react.webp";
 import html from "../images/html.webp";
 import css from "../images/css.webp";
 import javascript from "../images/javascript.webp";
+import {MdArrowBackIos, MdArrowForwardIos} from "react-icons/md"
 
 
 
@@ -65,7 +66,7 @@ export const Projects = ()=>{
         const leftHelperStyle = document.getElementsByClassName("project helper left")[0]
         const rightHelperStyle = document.getElementsByClassName("project helper right")[0]
         if(e === -1){
-            if(leftInvisibleStyle!==undefined){
+            if(leftInvisibleStyle){
                 setTimeout(()=>{
                     leftInvisibleStyle.classList.add("lvr")
                 },)
@@ -73,7 +74,7 @@ export const Projects = ()=>{
                     leftInvisibleStyle.classList.remove("lvr")
                 },1500)
             }
-            if(leftHelperStyle!==undefined){
+            if(leftHelperStyle){
                 setTimeout(()=>{
                     leftHelperStyle.classList.add("lhr")
                 },)
@@ -81,7 +82,7 @@ export const Projects = ()=>{
                     leftHelperStyle.classList.remove("lhr")
                 },1500)
             }
-            if(mainStyle!==undefined){
+            if(mainStyle){
                 setTimeout(()=>{
                     mainStyle.classList.add("mr")
                 },)
@@ -89,7 +90,7 @@ export const Projects = ()=>{
                     mainStyle.classList.remove("mr")
                 },1500)
             }
-            if(rightHelperStyle!==undefined){
+            if(rightHelperStyle){
                 setTimeout(()=>{
                     rightHelperStyle.classList.add("rhr")
                 },)
@@ -99,7 +100,7 @@ export const Projects = ()=>{
             }
         }
         else{
-            if(rightInvisibleStyle!==undefined){
+            if(rightInvisibleStyle){
                 setTimeout(()=>{
                     rightInvisibleStyle.classList.add("rvl")
                 },)
@@ -107,7 +108,7 @@ export const Projects = ()=>{
                     rightInvisibleStyle.classList.remove("rvl")
                 },1500)
             }
-            if(rightHelperStyle!==undefined){
+            if(rightHelperStyle){
                 setTimeout(()=>{
                     rightHelperStyle.classList.add("rhl")
                 },)
@@ -115,7 +116,7 @@ export const Projects = ()=>{
                     rightHelperStyle.classList.remove("rhl")
                 },1500)
             }
-            if(mainStyle!==undefined){
+            if(mainStyle){
                 setTimeout(()=>{
                     mainStyle.classList.add("ml")
                 },)
@@ -123,7 +124,7 @@ export const Projects = ()=>{
                     mainStyle.classList.remove("ml")
                 },1500)
             }
-            if(leftHelperStyle!==undefined){
+            if(leftHelperStyle){
                 setTimeout(()=>{
                     leftHelperStyle.classList.add("lhl")
                 },)
@@ -146,7 +147,7 @@ export const Projects = ()=>{
             </VisibilityDiv>
             <div className="projects_wrapper">
                 <div className="clicker_left" onClick={()=>{handleClick(-1)}}>
-                    <h1>{"<"}</h1>
+                    <MdArrowBackIos className="clicker" color="#BAFF39"/>
                 </div>
                 {projectsList.map((project,i)=>{
                     if(i === primary-1 || i ===primary+1){
@@ -178,7 +179,7 @@ export const Projects = ()=>{
                     }
                 })}
                 <div className="clicker_right" onClick={()=>{handleClick(1)}}>
-                    <h1>{">"}</h1>
+                    <MdArrowForwardIos className="clicker" color="#BAFF39"/>
                 </div>
             </div>
             <div className="project_info">
