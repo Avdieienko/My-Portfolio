@@ -19,3 +19,21 @@ header{
   header img:hover{
     transform: scale(1.2);
   }
+
+
+  .header_logo{
+    font-family: 'Reenie Beanie', cursive;
+    margin:0;
+    font-weight: lighter;
+    font-size: 6vw;
+  }
+
+  header a{
+    text-decoration: none;
+  }
+
+  @media (orientation:portrait) {
+    .header_logo{
+      font-size: 10vw;
+    }
+  }
