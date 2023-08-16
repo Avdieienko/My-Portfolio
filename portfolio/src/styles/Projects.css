@@ -1,5 +1,10 @@
 .projects_section{
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 5%;
 }
 
   .projects_wrapper{
@@ -240,20 +245,20 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-  
+    width:100%;
   }
   
   .project_skills{
     margin-left: 3%;
   }
   .project_skill{
-    width:5vw;
+    width:3vw;
     height: auto;
   }
   
   .project_title{
     font-size: 3vw;
-    max-width:60vw
+    max-width:70vw
   }
   
   .project_description{
@@ -271,25 +276,7 @@
 
 
 @media (orientation:portrait) {
-
-  .projects_wrapper{
-    height:20vh;
+  .projects_git{
+    font-size: 8vw;
   }
-    /* .ml .project_image, .rhr .project_image.helper, .mr .project_image, .project_image.helper, .project_image.invisible{
-        width:30vw;
-        height:17vw;
-    } */
-    .project_description{
-      font-size: 3vw;
-      width:60vw;
-    }
-    .project_title{
-      font-size: 5vw;
-    }
-    .explore{
-      margin: 10% 0%;
-    }
 }
-
-
-
