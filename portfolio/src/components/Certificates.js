@@ -41,9 +41,9 @@ export const Certificates = ()=>{
                         <h3 className="certificate_uni">University of Michigan</h3>
                 </VisibilityDiv>
             </div>
-            <VisibilityDiv classname="bottom_animation">
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.coursera.org/user/ab73ee8c75b35fed6edaa053000e7cb4" className="certificates_button">See more</a>
-            </VisibilityDiv>
+            <div>
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.coursera.org/user/ab73ee8c75b35fed6edaa053000e7cb4" className="link_button">See more</a>
+            </div>
         </section>
     )
 }

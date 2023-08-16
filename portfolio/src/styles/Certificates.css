@@ -48,12 +48,13 @@
   
   .certificate_name{
     font-size: 1.4vw;
-    top:45%;
+    top:30%;
   }
   .certificate_uni{
     font-size: 1.2vw;
-    top:75%;
+    top:60%;
     color:white;
+    font-weight:500;
   }
 
   .primary .certificate_name{
@@ -61,29 +62,9 @@
   }
   .primary .certificate_uni{
     font-size: 1.8vw;
+    font-weight:500;
   }
-  .certificates_button{
-    padding:1% 5% 1% 5%;
-    border-radius: 16px;
-    background-color: #BAFF39;
-    font-size: 1.3vw;
-    color:black;
-    font-weight: bold;
-    text-decoration: none;
-    transition: .2s;
-  }
-  .certificates_button:link{
-    color:black;
-  }
-  .certificates_button:visited{
-    color:black;
-  }
-  
-  .certificates_button:hover{
-    background-color: white;
-    color:black;
-  }
-  
+
   .certificate:hover .certificate_image{
     opacity: 1;
     border-color:#BAFF39;
@@ -96,31 +77,25 @@
   @media (orientation:portrait){
     .certificates{
       grid-template-columns: auto;
-      gap:1%;
-      padding-bottom: 27%;
-      margin-bottom: 2%;
+      gap:0%;
+      height:190vh;
+      padding-bottom:0%;
     }
     .certificate_name, .primary .certificate_name{
-      font-size: 4.8vw;
-      width:78%;
-      top:50%;
+      font-size: 7vw;
+      left:3%;
     }
     .certificate_image, .primary .certificate_image{
-      width:70vw;
+      width:100%;
+      height:auto;
+      object-fit: cover;
       opacity: 0.5;
       transition: 0.3s;
-      border: transparent solid 4px;
+      border:none;
     }
     .primary .certificate_uni, .certificate_uni{
       font-size: 4vw;
-    }
-    .certificates_button{
-      padding:3% 8% 3% 8%;
-      border-radius: 16px;
-      background-color: #BAFF39;
-      font-size: 5vw;
-      color:black;
-      font-weight: bold;
+      left:3%;
     }
     .certificates_section{
       padding-bottom: 10%;
