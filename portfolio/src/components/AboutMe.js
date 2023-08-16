@@ -16,11 +16,12 @@ export const AboutMe = ()=>{
                 Born in Kyiv, Ukraine.<img alt="Ukrainian flag" src={flag}/> I am a computer science student at the University of Southampton.<br/><br/>
                 Keen on software engineering, artificial intelligence, and machine learning.
                 Hard-working, ambitious and flexible.<br/><br/>
-                Undergoing UFP at Soton with progression degree as Bsc Computer Science. Plans include Meng in Artificial Intelligence.🖥️<br/><br/>
-                Looking for a Software Engineer Internship.
+                Undergoing Bsc Computer Science.🖥️<br/><br/>
+                Looking for a Computer Science Internship.
             </p>
             </VisibilityDiv>
             <img alt="Greeting portrait"className="greeting_portrait" src={greeting_portrait}></img>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/dmytro-avdieienko-843324217/" className="link_button">My LinkedIn</a>
         </section>
     )
 }
