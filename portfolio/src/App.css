@@ -8,6 +8,32 @@
     color:#6E6E6E;
     background: #BAFF39;
   }
+
+::-webkit-scrollbar{
+  width:10px
+}
+
+::-webkit-scrollbar-track{
+  background-color: #6E6E6E;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #BAFF39;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
   height: 100vh;
@@ -26,37 +52,55 @@
   animation-name: opaciter;
 }
 
+
+.loaded_name{
+  color:#BAFF39;
+  margin:3%;
+}
+
 .loaded_logo{
   font-size: 15vw;
   margin: 0;
   font-family: 'Reenie Beanie', cursive;
-  animation-duration: 3.5s;
-  animation-timing-function: ease-in-out;
-  animation-name: loading;
+}
+
+.link_button{
+  padding:1% 5% 1% 5%;
+  width: fit-content;
+  margin:5% 0;
+  border-radius: 16px;
+  background-color: #BAFF39;
+  font-size: 1.3vw;
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .2s;
+}
+.link_button:link{
+  color:black;
+}
+.link_button:visited{
+  color:black;
+}
+
+.link_button:hover{
+  background-color: white;
+  color:black;
+}
+
+@media (orientation:portrait) {
+  .link_button{
+    padding:2% 7% 2% 7%;
+    font-size: 5vw;
+  }
 }
 
 @media (orientation:portrait) {
   .loaded_logo{
     font-size: 30vw;
-    margin: 5%;
   }
 }
 
-
-@keyframes loading {
-  0%{
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50%{
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100%{
-    transform: translateY(-300%);
-    opacity: 0;
-  }
-}
 
 @keyframes opaciter {
   0%{
@@ -76,6 +120,13 @@ body{
 main section{
   padding-left: 15%;
   padding-right: 15%;
+}
+
+@media (orientation:portrait) {
+  main section{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 h1{
