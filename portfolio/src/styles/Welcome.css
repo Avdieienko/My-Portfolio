@@ -29,20 +29,6 @@
   .degree{
     color:white;
   }
-  
-  .ball, .car{
-    width:4vw;
-    position: relative;
-  }
-  .ball{
-    top:-75%;
-    left:12%;
-  }
-  .car{
-    top:-55%;
-    left:82%;
-  }
-  
   @media (orientation:portrait) {
     .welcome_section{
       align-items: center;
@@ -58,18 +44,6 @@
       position: relative;
       top:0%
     }
-    .ball{
-      width:6vw;
-      position: absolute;
-      top:14%;
-      left:15%;
-    }
-    .car{
-      width:6vw;
-      position: absolute;
-      top:35%;
-      left:95%;
-    }
     .greeting{
       font-size:4vw;
     }
@@ -80,9 +54,6 @@
     .degree{
       font-size:4vw;
       color:white;
-    }
-    header img{
-      width:13vw;
     }
   }
   

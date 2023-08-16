@@ -16,6 +16,8 @@
   }
   .skill{
     transition: .2s;
+    width:9vw;
+    height:auto;
   }
   
   .skill:hover{
@@ -35,7 +37,8 @@
       margin:auto
     }
     .skills_section{
-      height:400%
+      height:400%;
+      padding-bottom:0%
     }
   }
   

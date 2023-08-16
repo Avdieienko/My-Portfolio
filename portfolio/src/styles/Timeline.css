@@ -45,6 +45,7 @@
   .time_data{
     display: flex;
     flex-direction: row;
+    padding: 3% 0;
   }
   .time_left{
     margin-left: 5%;
@@ -78,7 +79,7 @@
       height:100%;
     }
     .timeline::after{
-      left:10%;
+      left:11%;
       width:1vw;
     }
     .time_left, .time_right{
@@ -98,16 +99,16 @@
       font-size: 3vw;
     }
     .time_text{
-      width:70%;
+      width:100%;
     }
     .time_img{
-      width:15vw;
+      width:20vw;
     }
     .time_data{
     padding-bottom: 20%;
     }
     .time_text p{
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 4vw;
     }
   }

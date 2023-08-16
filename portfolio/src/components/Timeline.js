@@ -27,7 +27,7 @@ export const Timeline = ()=>{
                         <div className="time_text">
                             <h2>University of Southampton</h2>
                             <h3>2022-23</h3>
-                            <p>Currently undergoing Undergraduate Foundation Programme at University of Southampton, top 10 UK University for Computer Science and Engineering</p>
+                            <p>Succesfully completed Undergraduate Foundation Programme at University of Southampton, with the A*.</p>
                         </div>
                         <div>
                             <img alt="University of Southampton" src={uni_logo} className="time_img"/>
@@ -36,8 +36,8 @@ export const Timeline = ()=>{
                 <VisibilityDiv classname="time_data time_left left_animation">
                         <div className="time_text">
                             <h2>University of Southampton</h2>
-                            <h3>2023-26</h3>
-                            <p>Will be doing Bsc Computer Science starting from 2023</p>
+                            <h3>2023-Present</h3>
+                            <p>Undergoing Bsc Computer Science.</p>
                         </div>
                         <div>
                             <img alt="University of Southampton" src={uni_logo} className="time_img"/>

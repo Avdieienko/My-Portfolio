@@ -11,28 +11,28 @@ export const Skills =()=>{
             </VisibilityDiv>
             <div className="skills">
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoCPlusPlus className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoCPlusPlus className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoPython className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoPython className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoJavascript className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoJavascript className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoReact className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoReact className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoJava className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoJava className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoHtml5 className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoHtml5 className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoCss3 className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoCss3 className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
                 <VisibilityDiv classname="bottom_animation">
-                    <BiLogoGit className="skill" color="#BAFF39" size={150}/>
+                    <BiLogoGit className="skill" color="#BAFF39"/>
                 </VisibilityDiv>
             </div>
         </section>

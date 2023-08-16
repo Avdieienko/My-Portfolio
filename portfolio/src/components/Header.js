@@ -10,7 +10,7 @@ export const Header = ()=>{
                 <h1 className="header_logo">VDNK</h1>
             </a>
             <a href="mailto:avdieienko.d@gmail.com">
-                <img className="contact_me top_animation" alt="Contact me" src={contactMe}></img>
+                <img className="contact_me" alt="Contact me" src={contactMe}></img>
             </a>
         </div>
     </header>
