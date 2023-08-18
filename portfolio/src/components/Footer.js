@@ -3,9 +3,9 @@ import "../styles/Footer.css"
 
 
 
-export const Footer = ()=>{
+export const Footer = ({backgroundColor})=>{
     return(
-        <footer>
+        <footer style={{backgroundColor:backgroundColor}}>
             <div className="socials">
                 <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/avd.dima03/">
                     <BsInstagram color="#BAFF39" size={35}/>
