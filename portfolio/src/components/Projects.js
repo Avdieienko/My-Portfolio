@@ -147,8 +147,8 @@ export const Projects = ()=>{
             <div className="projects_wrapper_mobile">
                 {projectsList.map((project, i)=>{
                     return(
-                        <a href={project.link} className="project_container_mobile">
-                            <div key={i}  className="project_mobile">
+                        <a key={i} href={project.link} className="project_container_mobile">
+                            <div className="project_mobile">
                                     <img alt={project.title} className="project_image_mobile" src={project.image}/>
                                     <h1 className="project_title_mobile">{project.title}</h1>
                                     <p className="project_description_mobile">{project.description}</p>
