@@ -5,6 +5,7 @@ import harvard_certificate from "../images/harvard_certificate.webp"
 import duke_certificate from "../images/duke_certificate.webp"
 import { VisibilityDiv } from "./OnScreen";
 import "../styles/Certificates.css"
+import { Link } from "react-router-dom";
 
 
 
@@ -42,7 +43,7 @@ export const Certificates = ()=>{
                 </VisibilityDiv>
             </div>
             <div>
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.coursera.org/user/ab73ee8c75b35fed6edaa053000e7cb4" className="link_button">See more</a>
+                    <Link to="/courses" className="link_button">See more</Link>
             </div>
         </section>
     )
