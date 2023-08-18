@@ -20,7 +20,7 @@ export const Main = () =>{
                     <Projects/>
                     <Timeline/>
                 </main>
-                <Footer/>
+                <Footer backgroundColor="#383838"/>
                 <DesktopFooter/>
         </>
     )
