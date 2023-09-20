@@ -268,16 +268,33 @@
     margin:auto
   }
   .projects_section_title{
-    margin-bottom: 0;
+    margin-bottom: 5%;
   }
 
   .explore{
     margin: 5% 0%;
   }
 
+.main_project{
+  width:50vw;
+  height: auto;
+  margin-top: 5%;
+}
+
+.main_project_wrapper{
+  width:100%;
+}
+
+.main_project_description{
+  width:50vw
+}
+
 
 @media (orientation:portrait) {
   .projects_git{
     font-size: 8vw;
+  }
+  .projects_section_title{
+    margin-bottom: 20%;
   }
 }

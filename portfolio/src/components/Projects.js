@@ -6,8 +6,11 @@ import flight from "../images/flight.png"
 import statistic from "../images/statistic.png"
 import security from "../images/security.png"
 import sort from "../images/sort.png"
+import harmonia from "../images/harmonia.png"
 import {MdArrowBackIos, MdArrowForwardIos} from "react-icons/md"
-import {BiLogoReact, BiLogoHtml5,BiLogoCss3, BiLogoPython,BiLogoJavascript} from "react-icons/bi"
+import {BiLogoReact, BiLogoHtml5,BiLogoCss3, BiLogoPython,BiLogoJavascript,BiLogoFlask} from "react-icons/bi"
+import {IoLogoElectron} from "react-icons/io5"
+import {SiMysql} from "react-icons/si"
 import {BsGithub} from "react-icons/bs"
 import {useOrientation} from "react-use"
 import "../styles/ProjectsMob.css"
@@ -143,6 +146,40 @@ export const Projects = ()=>{
             <VisibilityDiv classname="bottom animation">
                 <h1 className="projects_section_title">Projects</h1>
             </VisibilityDiv>
+            {type != "landscape-primary"
+            ?<a href="https://github.com/daniil-zahoruiko/spotify_project" className="project_container_mobile">
+                <div className="project_mobile">
+                    <img className="project_image_mobile" alt="Harmonia" src={harmonia} />
+                    <h1 className="project_title_mobile">Harmonia (Spotify clone)</h1>
+                    <p className="project_description_mobile">Full Stack music streaming application.
+                     Includes user account management, authentication and ability to become creator and upload your own songs.
+                    </p>
+                </div>
+            </a>
+            :
+                <div className="main_project_wrapper">
+                    <a href="https://github.com/daniil-zahoruiko/spotify_project">
+                        <img className="project_image main_project" alt="Harmonia" src={harmonia} />
+                    </a>
+                    <div className="project_info">
+                        <h1 className="project_title main_project_title">Harmonia (Spotify clone)</h1>
+                        <div className="project_skills">
+                            <BiLogoFlask className="project_skill" color="#BAFF39"/>
+                            <BiLogoPython className="project_skill" color="#BAFF39"/>
+                            <BiLogoReact className="project_skill" color="#BAFF39"/>
+                            <BiLogoJavascript className="project_skill" color="#BAFF39"/>
+                            <IoLogoElectron className="project_skill" color="#BAFF39"/>
+                            <SiMysql className="project_skill" color="#BAFF39"/>
+                        </div>
+                    </div>
+                    <div className="project_description_wrapper">
+                        <p className="project_description main_project_description">Full Stack music streaming application similar to Spotify.
+                        Includes user account management, authentication, and bilingual support (Ukrainian and English). Enables users to become creators and upload their own songs.
+                        </p>
+                    </div>
+                    <h1>Other projects</h1>
+                </div>
+            }
             {type !== "landscape-primary" ?
             <div className="projects_wrapper_mobile">
                 {projectsList.map((project, i)=>{
