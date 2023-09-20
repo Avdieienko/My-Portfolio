@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import {Route, Routes, BrowserRouter} from "react-router-dom"
 import { Courses } from './components/Courses';
 import { NotFound } from './components/NotFound';
+import ScrollToTop from './components/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/courses" element={<Courses/>}/>
