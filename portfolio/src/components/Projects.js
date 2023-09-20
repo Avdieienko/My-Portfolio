@@ -177,6 +177,7 @@ export const Projects = ()=>{
                         Includes user account management, authentication, and bilingual support (Ukrainian and English). Enables users to become creators and upload their own songs.
                         </p>
                     </div>
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/daniil-zahoruiko/spotify_project" className="link_button">Explore</a>
                     <h1>Other projects</h1>
                 </div>
             }
