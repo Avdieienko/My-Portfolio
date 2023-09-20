@@ -146,7 +146,7 @@ export const Projects = ()=>{
             <VisibilityDiv classname="bottom animation">
                 <h1 className="projects_section_title">Projects</h1>
             </VisibilityDiv>
-            {type != "landscape-primary"
+            {type !== "landscape-primary"
             ?<a href="https://github.com/daniil-zahoruiko/spotify_project" className="project_container_mobile">
                 <div className="project_mobile">
                     <img className="project_image_mobile" alt="Harmonia" src={harmonia} />
