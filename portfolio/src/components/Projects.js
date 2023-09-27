@@ -7,6 +7,7 @@ import statistic from "../images/statistic.png"
 import security from "../images/security.png"
 import sort from "../images/sort.png"
 import harmonia from "../images/harmonia.png"
+import cryptostash from "../images/cryptostash.png"
 import {MdArrowBackIos, MdArrowForwardIos} from "react-icons/md"
 import {BiLogoReact, BiLogoHtml5,BiLogoCss3, BiLogoPython,BiLogoJavascript,BiLogoFlask} from "react-icons/bi"
 import {IoLogoElectron} from "react-icons/io5"
@@ -37,11 +38,11 @@ export const Projects = ()=>{
         "description":"Dataframe for each flight, link for scraped website, and a graph with cheapest, average, and maximum ticket price for each day in the given date range."
     },
     {
-        "title":"Japanese restaurant",
-        "image":restaurant,
+        "title":"CryptoStash",
+        "image":cryptostash,
         "skills":[BiLogoReact, BiLogoJavascript, BiLogoHtml5, BiLogoCss3],
-        "link":"https://avdieienko.com/restaurant/",
-        "description":"Website for an imaginary japanese restaurant, with all functionality (except back-end)"
+        "link":"https://avdieienko.com/cryptostash/",
+        "description":"Website that provides information and data about cryptocurrencies using Binance API. Gives all current data and kline graph for more than 25 currencies."
     },
     {
         "title":"Sorting Visualiser",
@@ -49,6 +50,13 @@ export const Projects = ()=>{
         "skills":[BiLogoReact, BiLogoJavascript, BiLogoHtml5, BiLogoCss3],
         "link":"https://avdieienko.com/sorter",
         "description":"React web app with visualisation of array sorting using different algorithms"
+    },
+    {
+        "title":"Japanese restaurant",
+        "image":restaurant,
+        "skills":[BiLogoReact, BiLogoJavascript, BiLogoHtml5, BiLogoCss3],
+        "link":"https://avdieienko.com/restaurant/",
+        "description":"Website for an imaginary japanese restaurant, with all functionality (except back-end)"
     },
     {
         "title":"Statistical learning model",
